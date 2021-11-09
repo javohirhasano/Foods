@@ -1,0 +1,72 @@
+.About{
+    min-width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 232, 232);
+}
+.photo{
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 4px 10px 20px 4px black;
+    margin-left: 250px;
+}
+.photo img{
+    width: 500px;
+    height: 400px;
+}
+.write_cart{
+    background-color: white;
+width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 600px;
+    position: absolute;
+}
+.write_cart span{
+color:rgb(38, 112, 38);
+}
+.write_cart h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media(max-width:600px){
+    .About{
+        min-width: 100%;
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);  
+        align-items: center;
+        justify-content: center;
+        background-image: url("../images/zaytun.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .photo{
+        display: none;
+    }    
+    .write_cart{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        background-attachment: fixed;
+    width: 250px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: 40px;
+        position: absolute;
+        top: 700px;
+        left: 0;
+    }
+}

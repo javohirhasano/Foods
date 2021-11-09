@@ -1,0 +1,183 @@
+.Menu{
+    min-width: 100%;
+    min-height: 1000px;
+    background-image: url("../images/nok.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_menu{
+    width: 1000px;
+    min-height: 800px;
+    background-color: rgb(235, 233, 233);
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.main_menu span{
+    color: rgb(38, 112, 38) ;
+}
+.categorys{
+    margin-right: 400px;
+    margin-top: 30px;
+}
+.categorys button{
+    border-radius: 20px;
+padding: 5px;
+width: 100px;
+background-color:rgb(255, 255, 255) ;
+border-color: rgb(38, 112, 38);
+color: rgb(38, 112, 38);
+}   
+
+.categorys .active{
+    background-color: rgb(38, 112, 38);
+    color: white;
+    transition:background-color 0.4s;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+.hidden{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.card{
+    width: 250px;
+    margin: 20px;
+    height: 300px;
+}
+.card:hover{
+    border-radius: 20px;
+    box-shadow: 4px 10px 20px 4px black;
+    transition:box-shadow 0.4s;
+}
+.hidden:hover img{
+    width: 290px;
+    height: 270px;
+    transform: scale(2) rotate(45deg);
+    transition:transform 0.7s ease-in;
+}
+.menu_cards{
+    height: 800px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow: scroll;
+    margin-top: 20px;
+}
+.lorem {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.menu_cards>div {
+    display: none;
+}
+
+.menu_cards.all>div {
+    display: block;
+}
+
+.menu_cards.salad>div.salad_food {
+    display: block;
+}
+
+.menu_cards.lorem>div.lorem_food {
+    display: block;
+}
+
+.menu_cards.ipsum>div.ipsum_food {
+    display: block;
+}
+
+.menu_cards.cheps>div.cheps_food {
+    display: block;
+}
+.menu_cards.teste>div.teste_food {
+    display: block;
+}
+@media(max-width:600px){
+    .main_menu p{
+        font-size: 7px;
+    }
+    .main_menu{
+        text-align: center;
+        padding: 20px;
+    }
+    .menu_cards{
+        max-height: 800px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        overflow: scroll;
+        margin-top: 20px;
+        min-width: 100%;
+    }
+    .card{
+        width: 150px;
+        margin-top: 20px;
+        height: 200px;
+    }
+    .card img{
+        width: 100px;
+        height: 100px;
+    }
+    .hidden{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .categorys{
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+    .categorys button{
+        border-radius: 20px;
+    padding: 5px;
+    width: 70px;
+    background-color:rgb(255, 255, 255) ;
+    border-color: rgb(38, 112, 38);
+    color: rgb(38, 112, 38);
+    } 
+    .main_menu{
+        max-width: 1000px;
+        max-height: 40vh;
+        background-color: rgb(235, 233, 233);
+        border-radius: 30px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .Menu{
+        min-width: 300px;
+        min-height: 1000px;
+        background-image: url("../images/nok.jpg");
+        background-attachment: unset;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-left-radius: 30px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 20px;
+    }
+}
