@@ -131,6 +131,12 @@ color: rgb(38, 112, 38);
         width: 100px;
         height: 100px;
     }
+    .hidden:hover img{
+        width: 100px;
+        height: 100px;
+        transform: scale(2) rotate(45deg);
+        transition:transform 0.7s ease-in;
+    }
     .hidden{
         width: 100px;
         height: 100px;
