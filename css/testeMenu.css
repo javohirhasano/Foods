@@ -109,26 +109,33 @@ footer a:hover{
         left: 0;
         width: 100%;
         height: 80px;
-        background-color: green;
+        background-color: rgb(255, 255, 255);
         display: inline-block;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
     }
     .bottom ul{
         display: flex;
         padding-left: 10px;
         text-decoration: none;
         list-style-type: none;
+        overflow: hidden;
     }
     .bottom ul li a{
         text-decoration: none;
-        color: rgb(68, 241, 77);
+        color: rgb(23, 168, 30);
+        font-size: 30px;
     }
     .bottom ul li button{
-border-radius: 20px;
-margin-top: 20px;
-margin-left: 20px;
+margin-top: 0px;
+width: 80px;
+height: 80px;
+border: none;
+margin-bottom: 10px;
     }
     .bottom ul li button:hover{
-        background-color: rgb(68, 241, 77);
+        background-color: rgb(31, 182, 38);
         color: white;
     }
     .bottom ul li button:hover a{
