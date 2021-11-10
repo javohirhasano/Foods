@@ -67,7 +67,7 @@ background-size: cover;
 }
 .fixed{
     position: fixed;
-    bottom: 70px;
+    bottom: 200px;
     right: 70px;
     width: 40px;
     height: 30px;
@@ -108,9 +108,31 @@ footer a:hover{
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 200px;
+        height: 80px;
         background-color: green;
         display: inline-block;
+    }
+    .bottom ul{
+        display: flex;
+        padding-left: 10px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .bottom ul li a{
+        text-decoration: none;
+        color: rgb(68, 241, 77);
+    }
+    .bottom ul li button{
+border-radius: 20px;
+margin-top: 20px;
+margin-left: 20px;
+    }
+    .bottom ul li button:hover{
+        background-color: rgb(68, 241, 77);
+        color: white;
+    }
+    .bottom ul li button:hover a{
+        color: white;
     }
 .cardteste{
     width: 250px;
@@ -139,5 +161,5 @@ color: rgb(38, 112, 38);
 
 }
 .bottom{
-    display: none;
+    
 }
