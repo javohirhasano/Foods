@@ -47,8 +47,10 @@ color:rgb(38, 112, 38);
         align-items: center;
         justify-content: center;
         background-image: url("../images/zaytun.jpg");
+        background-attachment: fixed;
         background-position: center;
         background-size: cover;
+        margin-bottom: -90px;
     }
     .photo{
         display: none;
